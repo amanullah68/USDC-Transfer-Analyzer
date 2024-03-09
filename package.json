@@ -1,0 +1,29 @@
+{
+  "name": "usdc_analyzer",
+  "version": "1.0.0",
+  "description": "Service which will track AVAX chain USDC and analyze/aggregate it's data",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node  src/index.js",
+    "start:dev": "NODE_ENV=development node src/index.js",
+    "start:stage": "NODE_ENV=staging node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.12.0",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "web3": "^1.2.11",
+    "winston": "^3.10.0"
+  }
+}

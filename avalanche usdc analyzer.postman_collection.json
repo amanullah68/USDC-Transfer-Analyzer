@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "23a7003c-c921-4f16-8b84-7ccdd6b536a4",
+		"name": "avalanche usdc analyzer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28153861",
+		"_collection_link": "https://red-equinox-773447.postman.co/workspace/My-Workspace~10681217-4912-442d-8e15-200dd1bcd776/collection/28153861-23a7003c-c921-4f16-8b84-7ccdd6b536a4?action=share&source=collection_link&creator=28153861"
+	},
+	"item": [
+		{
+			"name": "total usdc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/usdc/totalUsdcInPeriod?startTime=1608805653&endTime=1679810935",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"usdc",
+						"totalUsdcInPeriod"
+					],
+					"query": [
+						{
+							"key": "startTime",
+							"value": "1608805653"
+						},
+						{
+							"key": "endTime",
+							"value": "1679810935"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get top accounts by txs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9003/usdc/topAccountsByTransactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9003",
+					"path": [
+						"usdc",
+						"topAccountsByTransactions"
+					],
+					"query": [
+						{
+							"key": "startTime",
+							"value": "1608805653",
+							"disabled": true
+						},
+						{
+							"key": "endTime",
+							"value": "1679810935",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

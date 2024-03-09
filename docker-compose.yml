@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - '9003:9003'
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
